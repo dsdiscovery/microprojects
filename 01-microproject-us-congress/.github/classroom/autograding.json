@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python us-congress-dataset-groupby.ipynb && python us-congress-dataset-groupby.py",
+      "run": "jupyter nbconvert --to=python 01-microproject-us-congress.ipynb && python 01-microproject-us-congress.py",
       "comparison": "included",
       "timeout": 0.5,
       "points": 100
