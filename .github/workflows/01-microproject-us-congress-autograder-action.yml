@@ -16,6 +16,8 @@ jobs:
         python-version: '3.10'
         cache: pip
         cache-dependency-path: 01-microproject-us-congress/requirements.txt
+    - name: Set up Jupyter
+      run: python -m pip install pandas jupyter 
     - name: Autograding
       id: autograding
       uses: wadefagen/autograding@v2
