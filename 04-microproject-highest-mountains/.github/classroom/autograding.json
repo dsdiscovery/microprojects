@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "name": "Notebook Grading",
+      "run": "jupyter nbconvert --to=python 04-microproject-highest-mountains.ipynb && python 04-microproject-highest-mountains.py",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 100
+    }
+  ]
+}
