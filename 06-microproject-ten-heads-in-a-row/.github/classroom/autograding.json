@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "name": "Notebook Grading",
+      "run": "jupyter nbconvert --to=python 06-microproject-ten-heads-in-a-row.ipynb && python 06-microproject-ten-heads-in-a-row.py",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 100
+    }
+  ]
+}
