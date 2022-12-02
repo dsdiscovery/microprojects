@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "name": "Notebook Grading",
+      "run": "jupyter nbconvert --to=python 08-microproject-FIFA-world-cup.ipynb && python 08-microproject-FIFA-world-cup.py",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 100
+    }
+  ]
+}
