@@ -19,7 +19,7 @@ jobs:
     - run: pip install -r 09-microproject-valentines-day/requirements.txt
     - name: Autograding
       id: autograding
-      uses: wadefagen/autograding@v2
+      uses: illinois/autograding@v3
       with:
         path: 09-microproject-valentines-day/
         test_suite: autograding
