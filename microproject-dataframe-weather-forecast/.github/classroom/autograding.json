@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "name": "Notebook Grading",
+      "run": "jupyter nbconvert --to=python microproject-dataframe-weather-forecast.ipynb && python microproject-dataframe-weather-forecast.py",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 100
+    }
+  ]
+}
