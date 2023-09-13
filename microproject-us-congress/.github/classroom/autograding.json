@@ -1,11 +1,28 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-us-congress.ipynb && python microproject-us-congress.py",
+      "name": "Puzzle 1: Splitting The House of Representatives and The Senate",
+      "setup": "",
+      "run": "pytest test_microproject-us-congress.py::test_Puzzle_1__Splitting_The_House_of_Representatives_and_The_Senate",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2: Find the Controlling Party of the House of Representatives",
+      "setup": "",
+      "run": "pytest test_microproject-us-congress.py::test_Puzzle_2__Find_the_Controlling_Party_of_the_House_of_Representatives",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: Find the Youngest Member of each Party in the House of Representatives",
+      "setup": "",
+      "run": "pytest test_microproject-us-congress.py::test_Puzzle_3__Find_the_Youngest_Member_of_each_Party_in_the_House_of_Representatives",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
