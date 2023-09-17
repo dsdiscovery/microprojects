@@ -1,11 +1,52 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-world-university-rankings.ipynb && python microproject-world-university-rankings.py",
+      "name": "Importing the World University Rank Dataset",
+      "setup": "",
+      "run": "pytest test_microproject-world-university-rankings.py::test_Importing_the_World_University_Rank_Dataset",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1: Rankings with the United States",
+      "setup": "",
+      "run": "pytest test_microproject-world-university-rankings.py::test_Puzzle_1__Rankings_with_the_United_States",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.2: Re-indexing the Universities in the United States",
+      "setup": "",
+      "run": "pytest test_microproject-world-university-rankings.py::test_Puzzle_1_2__Re_indexing_the_Universities_in_the_United_States",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2: Large Universities in the United States",
+      "setup": "",
+      "run": "pytest test_microproject-world-university-rankings.py::test_Puzzle_2__Large_Universities_in_the_United_States",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.2: Using the index to store a US_Large_Ranking",
+      "setup": "",
+      "run": "pytest test_microproject-world-university-rankings.py::test_Puzzle_2_2__Using_the_index_to_store_a_US_Large_Ranking",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: Creating Random Subsets",
+      "setup": "",
+      "run": "pytest test_microproject-world-university-rankings.py::test_Puzzle_3__Creating_Random_Subsets",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
