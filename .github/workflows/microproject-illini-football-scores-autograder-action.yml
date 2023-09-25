@@ -17,17 +17,30 @@ jobs:
         cache: pip
         cache-dependency-path: microproject-illini-football-scores/requirements.txt
     - run: pip install -r microproject-illini-football-scores/requirements.txt
+    - name: Checkout release repository
+      id: release-checkout
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/microprojects
+        ref: microproject-illini-football-scores
+        path: release
+    - name: Checkout cell replacer
+      id: cell-replace-checkout
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/cell-replace
+        path: cell-replace
+    - name: Run cell-replace
+      run: python cell-replace/cell-replace.py microproject-illini-football-scores/microproject-illini-football-scores.ipynb release/microproject-illini-football-scores/microproject-illini-football-scores.ipynb
+    - name: Generate Test Script
+      run: 'python3 -m jupyter2pytest microproject-illini-football-scores/microproject-illini-football-scores.ipynb "### TEST CASE for (.*)" microproject-illini-football-scores/test_microproject-illini-football-scores.py '
+    - name: Generate Grading Artifacts
+      run: cd microproject-illini-football-scores && python3 test_microproject-illini-football-scores.py && cd ..
     - name: Autograding
       id: autograding
-      uses: illinois/autograding@v3
+      uses: illinois/autograding@v4
       with:
         path: microproject-illini-football-scores/
         test_suite: autograding
         step_summary: true
-    - name: Generate workflow summary
-      if: ${{ always() }}
-      run: echo -e "$(sh ./.github/workflows/gen-status-report.sh)" >> $GITHUB_STEP_SUMMARY
-      env:
-        sr_checkout_status: ${{ steps.sr-checkout.outcome }}
-        autograding_status: ${{ steps.autograding.outcome }}
-        points: ${{ steps.autograding.outputs.Points }}
+        all_or_nothing: true

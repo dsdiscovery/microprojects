@@ -1,11 +1,28 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-illini-football-scores.ipynb && python microproject-illini-football-scores.py",
+      "name": "Puzzle 1: The Best and Worst Games in History",
+      "setup": "",
+      "run": "pytest test_microproject-illini-football-scores.py::test_Puzzle_1__The_Best_and_Worst_Games_in_History",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2: Are Football Scores Higher in Recent Years?",
+      "setup": "",
+      "run": "pytest test_microproject-illini-football-scores.py::test_Puzzle_2__Are_Football_Scores_Higher_in_Recent_Years_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: Create a Bar Chart",
+      "setup": "",
+      "run": "pytest test_microproject-illini-football-scores.py::test_Puzzle_3__Create_a_Bar_Chart",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
