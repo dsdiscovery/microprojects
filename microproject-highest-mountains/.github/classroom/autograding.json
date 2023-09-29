@@ -1,11 +1,36 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-highest-mountains.ipynb && python microproject-highest-mountains.py",
+      "name": "Data Import",
+      "setup": "",
+      "run": "pytest test_microproject-highest-mountains.py::test_Data_Import",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Data Merging",
+      "setup": "",
+      "run": "pytest test_microproject-highest-mountains.py::test_Data_Merging",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Mountains",
+      "setup": "",
+      "run": "pytest test_microproject-highest-mountains.py::test_Mountains",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Final Checkpoint",
+      "setup": "",
+      "run": "pytest test_microproject-highest-mountains.py::test_Final_Checkpoint",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }

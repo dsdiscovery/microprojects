@@ -1,3 +1,4 @@
-jupyter
-pandas
-lxml
+lxml==4.9.3
+pandas==2.0.3
+jupyter2pytest
+pytest
