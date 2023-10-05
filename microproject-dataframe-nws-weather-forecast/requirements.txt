@@ -1,3 +1,4 @@
-jupyter
-pandas
-matplotlib
+matplotlib==3.8.0
+pandas==2.0.3
+jupyter2pytest
+pytest

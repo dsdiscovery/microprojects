@@ -1,11 +1,36 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-dataframe-nws-weather-forecast.ipynb && python microproject-dataframe-nws-weather-forecast.py",
+      "name": "Data API",
+      "setup": "",
+      "run": "pytest test_microproject-dataframe-nws-weather-forecast.py::test_Data_API",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1: Loading Your Weather Forecast as a DataFrame",
+      "setup": "",
+      "run": "pytest test_microproject-dataframe-nws-weather-forecast.py::test_Puzzle_1__Loading_Your_Weather_Forecast_as_a_DataFrame",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2: Exploring Your Weather",
+      "setup": "",
+      "run": "pytest test_microproject-dataframe-nws-weather-forecast.py::test_Puzzle_2__Exploring_Your_Weather",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: Create a Scatter Plot",
+      "setup": "",
+      "run": "pytest test_microproject-dataframe-nws-weather-forecast.py::test_Puzzle_3__Create_a_Scatter_Plot",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
