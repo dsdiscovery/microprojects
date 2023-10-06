@@ -1,11 +1,44 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-bechdel-test.ipynb && python microproject-bechdel-test.py",
+      "name": "Step 1.2: Specify the `columns`",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test_Step_1_2__Specify_the__columns_",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Step 1.3: Specify the `values`",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test_Step_1_3__Specify_the__values_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Step 1.4: Specify the `fill_value`",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test_Step_1_4__Specify_the__fill_value_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2.1: Create a Percentage Graph",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test_Part_2_1__Create_a_Percentage_Graph",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2.2: Finding the Percentage of Movies /Year with Each Rating",
+      "setup": "",
+      "run": "pytest test_microproject-bechdel-test.py::test_Part_2_2__Finding_the_Percentage_of_Movies__Year_with_Each_Rating",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
