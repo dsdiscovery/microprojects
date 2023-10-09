@@ -17,17 +17,37 @@ jobs:
         cache: pip
         cache-dependency-path: microproject-choropleth-map-dataframe/requirements.txt
     - run: pip install -r microproject-choropleth-map-dataframe/requirements.txt
+    - name: Checkout release repository
+      id: release-checkout
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/microprojects
+        ref: microproject-choropleth-map-dataframe
+        path: release
+    - name: Checkout cell replacer
+      id: cell-replace-checkout
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/cell-replace
+        path: cell-replace
+    - name: Ensure clean and up-to-date grading files
+      id: local-copy
+      uses: illinois/local-copy@v1
+      with:
+        src_path: release/microproject-choropleth-map-dataframe
+        dst_path: microproject-choropleth-map-dataframe
+        copy: '.github/classroom : .github/classroom, requirements.txt : requirements.txt'
+    - name: Run cell-replace
+      run: python cell-replace/cell-replace.py microproject-choropleth-map-dataframe/microproject-choropleth-map-dataframe.ipynb release/microproject-choropleth-map-dataframe/microproject-choropleth-map-dataframe.ipynb
+    - name: Generate Test Script
+      run: 'python3 -m jupyter2pytest microproject-choropleth-map-dataframe/microproject-choropleth-map-dataframe.ipynb "### TEST CASE for (.*)" microproject-choropleth-map-dataframe/test_microproject-choropleth-map-dataframe.py '
+    - name: Generate Grading Artifacts
+      run: cd microproject-choropleth-map-dataframe && python3 test_microproject-choropleth-map-dataframe.py && cd ..
     - name: Autograding
       id: autograding
-      uses: illinois/autograding@v3
+      uses: illinois/autograding@v4
       with:
         path: microproject-choropleth-map-dataframe/
         test_suite: autograding
         step_summary: true
-    - name: Generate workflow summary
-      if: ${{ always() }}
-      run: echo -e "$(sh ./.github/workflows/gen-status-report.sh)" >> $GITHUB_STEP_SUMMARY
-      env:
-        sr_checkout_status: ${{ steps.sr-checkout.outcome }}
-        autograding_status: ${{ steps.autograding.outcome }}
-        points: ${{ steps.autograding.outputs.Points }}
+        all_or_nothing: true

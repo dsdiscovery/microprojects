@@ -1,5 +1,6 @@
-jupyter
-pandas
+folium==0.14.0
+numpy==1.25.0
 matplotlib
-folium
-numpy
+pandas==2.0.3
+jupyter2pytest
+pytest

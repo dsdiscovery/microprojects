@@ -1,11 +1,44 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-choropleth-map-dataframe.ipynb && python microproject-choropleth-map-dataframe.py",
+      "name": "Part 2: Importing Libraries and Loading Datasets",
+      "setup": "",
+      "run": "pytest test_microproject-choropleth-map-dataframe.py::test_Part_2__Importing_Libraries_and_Loading_Datasets",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Part 3: Making Our Own Choropleth Map",
+      "setup": "",
+      "run": "pytest test_microproject-choropleth-map-dataframe.py::test_Part_3__Making_Our_Own_Choropleth_Map",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 4: Something Doesn't Look Right...",
+      "setup": "",
+      "run": "pytest test_microproject-choropleth-map-dataframe.py::test_Part_4__Something_Doesn_t_Look_Right___",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 5: Scaling Data",
+      "setup": "",
+      "run": "pytest test_microproject-choropleth-map-dataframe.py::test_Part_5__Scaling_Data",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 6: Creating a log10-scaled Choropleth Map",
+      "setup": "",
+      "run": "pytest test_microproject-choropleth-map-dataframe.py::test_Part_6__Creating_a_log10_scaled_Choropleth_Map",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
