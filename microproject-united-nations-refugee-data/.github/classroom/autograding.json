@@ -1,11 +1,44 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-united-nations-refugee-data.ipynb && python microproject-united-nations-refugee-data.py",
+      "name": "Puzzle 1.1: Fetching Refugees Data",
+      "setup": "",
+      "run": "pytest test_microproject-united-nations-refugee-data.py::test_Puzzle_1_1__Fetching_Refugees_Data_for_a_Single_Year",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.2: Getting the Number of Refugees",
+      "setup": "",
+      "run": "pytest test_microproject-united-nations-refugee-data.py::test_Puzzle_1_2__Getting_the_Number_of_Refugees_for_a_Single_Year",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.1 and 2.2: Fetching Refugees Data",
+      "setup": "",
+      "run": "pytest test_microproject-united-nations-refugee-data.py::test_Puzzle_2_1_and_2_2__Fetching_Refugees_Data",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.3: Fetching the Number of Refugees",
+      "setup": "",
+      "run": "pytest test_microproject-united-nations-refugee-data.py::test_Puzzle_2_3__Fetching_the_Number_of_Refugees_for_All_Years",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: Creating a Histogram of Refugees by Year",
+      "setup": "",
+      "run": "pytest test_microproject-united-nations-refugee-data.py::test_Puzzle_3__Creating_a_Histogram_of_Refugees_by_Year",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
