@@ -1,11 +1,28 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-covid-data-from-github.ipynb && python microproject-covid-data-from-github.py",
+      "name": "Data Import",
+      "setup": "",
+      "run": "pytest test_microproject-covid-data-from-github.py::test_Data_Import",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Data Analysis",
+      "setup": "",
+      "run": "pytest test_microproject-covid-data-from-github.py::test_Data_Analysis",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Pareto Principle",
+      "setup": "",
+      "run": "pytest test_microproject-covid-data-from-github.py::test_Pareto_Principle",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
