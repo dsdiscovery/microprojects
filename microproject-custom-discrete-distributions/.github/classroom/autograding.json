@@ -1,11 +1,36 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-custom-discrete-distributions.ipynb && python microproject-custom-discrete-distributions.py",
+      "name": "Random Variable #1: Modeling Flipping a Coin Twice",
+      "setup": "",
+      "run": "pytest test_microproject-custom-discrete-distributions.py::test_Random_Variable__1__Modeling_Flipping_a_Coin_Twice",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Random Variable #2: The Value of a Dice Roll",
+      "setup": "",
+      "run": "pytest test_microproject-custom-discrete-distributions.py::test_Random_Variable__2__The_Value_of_a_Dice_Roll",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Random Variable #3: Customer in a Tea Shop",
+      "setup": "",
+      "run": "pytest test_microproject-custom-discrete-distributions.py::test_Random_Variable__3__Customer_in_a_Tea_Shop",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Random Variable #4: Final Scores in DISCOVERY",
+      "setup": "",
+      "run": "pytest test_microproject-custom-discrete-distributions.py::test_Random_Variable__4__Final_Scores_in_DISCOVERY",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
