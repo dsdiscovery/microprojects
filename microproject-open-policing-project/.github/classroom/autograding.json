@@ -1,0 +1,36 @@
+{
+  "tests": [
+    {
+      "name": "Puzzle 1.1: Read The Data",
+      "setup": "",
+      "run": "pytest test_microproject-open-policing-project.py::test_Puzzle_1_1__Read_The_Data",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.3: Keeping Relevant Rows",
+      "setup": "",
+      "run": "pytest test_microproject-open-policing-project.py::test_Puzzle_1_3__Keeping_Relevant_Rows",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzles 2.1 and 2.2: Creating Filtered DataFrames",
+      "setup": "",
+      "run": "pytest test_microproject-open-policing-project.py::test_Puzzles_2_1_and_2_2__Creating_Filtered_DataFrames",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.3: ### Puzzle 2.3: Likelihood of Being Searched by Race",
+      "setup": "",
+      "run": "pytest test_microproject-open-policing-project.py::test_Puzzle_2_3______Puzzle_2_3__Likelihood_of_Being_Searched_by_Race",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
