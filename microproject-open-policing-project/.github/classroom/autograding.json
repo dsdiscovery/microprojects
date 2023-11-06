@@ -25,9 +25,9 @@
       "points": 1
     },
     {
-      "name": "Puzzle 2.3: ### Puzzle 2.3: Likelihood of Being Searched by Race",
+      "name": "Puzzle 2.3: Likelihood of Being Searched by Race",
       "setup": "",
-      "run": "pytest test_microproject-open-policing-project.py::test_Puzzle_2_3______Puzzle_2_3__Likelihood_of_Being_Searched_by_Race",
+      "run": "pytest test_microproject-open-policing-project.py::test_Puzzle_2_3__Likelihood_of_Being_Searched_by_Race",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
