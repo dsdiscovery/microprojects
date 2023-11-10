@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "Part 1: Creating a Function to Play Roulette",
+      "setup": "",
+      "run": "pytest test_microproject-infinite-money-in-roulette-martingale.py::test_Part_1__Creating_a_Function_to_Play_Roulette",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Simulation of Betting with $10,000",
+      "setup": "",
+      "run": "pytest test_microproject-infinite-money-in-roulette-martingale.py::test_Part_2__Simulation_of_Betting_with__10_000",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 3: Analysis of Infinite Money",
+      "setup": "",
+      "run": "pytest test_microproject-infinite-money-in-roulette-martingale.py::test_Part_3__Analysis_of_Infinite_Money",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
