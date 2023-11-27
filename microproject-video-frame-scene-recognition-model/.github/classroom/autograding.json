@@ -1,11 +1,52 @@
 {
   "tests": [
     {
-      "name": "Notebook Grading",
-      "run": "jupyter nbconvert --to=python microproject-video-frame-scene-recognition-model.ipynb && python microproject-video-frame-scene-recognition-model.py",
+      "name": "Reading Video Frames",
+      "setup": "",
+      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Reading_Video_Frames",
       "comparison": "included",
       "timeout": 0.5,
-      "points": 100
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.1: Finding the Average Color of One Image",
+      "setup": "",
+      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Puzzle_1_1__Finding_the_Average_Color_of_One_Image",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.2: Finding the Average Color of All Images",
+      "setup": "",
+      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Puzzle_1_2__Finding_the_Average_Color_of_All_Images",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Create a Simple Classifier",
+      "setup": "",
+      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Part_2__Create_a_Simple_Classifier",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 3: Using Your Classifier",
+      "setup": "",
+      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Part_3__Using_Your_Classifier",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 4: Update Your Classifier to Account with an \"Other\" Category",
+      "setup": "",
+      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Part_4__Update_Your_Classifier_to_Account_with_an__Other__Category",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
     }
   ]
 }
