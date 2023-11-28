@@ -43,7 +43,7 @@
     {
       "name": "Part 4: Update Your Classifier to Account with an Other Category",
       "setup": "",
-      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Part_4__Update_Your_Classifier_to_Account_with_an__Other__Category",
+      "run": "pytest test_microproject-video-frame-scene-recognition-model.py::test_Part_4__Update_Your_Classifier_to_Account_with_an_Other_Category",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
