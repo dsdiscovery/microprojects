@@ -1,0 +1,52 @@
+{
+  "tests": [
+    {
+      "name": "Data Import",
+      "setup": "",
+      "run": "pytest test_microproject-ai-vs-human-response-analysis.py::test_Data_Import",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1: Response Length Analysis (Puzzles 1.1 and 1.2)",
+      "setup": "",
+      "run": "pytest test_microproject-ai-vs-human-response-analysis.py::test_Puzzle_1__Response_Length_Analysis__Puzzles_1_1_and_1_2_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1: Response Length Analysis (Puzzles 1.3 and 1.4)",
+      "setup": "",
+      "run": "pytest test_microproject-ai-vs-human-response-analysis.py::test_Puzzle_1__Response_Length_Analysis__Puzzles_1_3_and_1_4_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2: Sentiment Analysis - Polarity",
+      "setup": "",
+      "run": "pytest test_microproject-ai-vs-human-response-analysis.py::test_Puzzle_2__Sentiment_Analysis___Polarity",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: Sentiment Analysis - Subjectivity",
+      "setup": "",
+      "run": "pytest test_microproject-ai-vs-human-response-analysis.py::test_Puzzle_3__Sentiment_Analysis___Subjectivity",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 4: Testing if the Difference in Subjectivity is Statistically Significant",
+      "setup": "",
+      "run": "pytest test_microproject-ai-vs-human-response-analysis.py::test_Puzzle_4__Testing_if_the_Difference_in_Subjectivity_is_Statistically_Significant",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
