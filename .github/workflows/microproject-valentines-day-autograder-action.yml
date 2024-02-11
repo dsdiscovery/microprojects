@@ -1,0 +1,53 @@
+name: microproject-valentines-day Grading
+'on':
+  workflow_dispatch: {}
+jobs:
+  autograding:
+    name: autograding
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: Checkout
+      id: sr-checkout
+      uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: pip
+        cache-dependency-path: microproject-valentines-day/requirements.txt
+    - name: Checkout release repository
+      id: release-checkout
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/microprojects
+        ref: microproject-valentines-day
+        path: release
+    - name: Checkout cell replacer
+      id: cell-replace-checkout
+      uses: actions/checkout@v3
+      with:
+        repository: dsdiscovery/cell-replace
+        path: cell-replace
+    - name: Copy up-to-date grading files from release
+      id: local-copy
+      uses: illinois/local-copy@v1
+      with:
+        src_path: release/microproject-valentines-day
+        dst_path: microproject-valentines-day
+        copy: '.github/classroom : .github/classroom, requirements.txt : requirements.txt'
+    - run: pip install -r microproject-valentines-day/requirements.txt
+    - name: Run cell-replace
+      run: python cell-replace/cell-replace.py microproject-valentines-day/microproject-valentines-day.ipynb release/microproject-valentines-day/microproject-valentines-day.ipynb
+    - name: Generate Test Script
+      run: 'python3 -m jupyter2pytest microproject-valentines-day/microproject-valentines-day.ipynb "### TEST CASE for (.*)" microproject-valentines-day/test_microproject-valentines-day.py '
+    - name: Generate Grading Artifacts
+      run: cd microproject-valentines-day && python3 test_microproject-valentines-day.py && cd ..
+    - name: Autograding
+      id: autograding
+      uses: illinois/autograding@v4
+      with:
+        path: microproject-valentines-day/
+        test_suite: autograding
+        step_summary: true
+        all_or_nothing: true

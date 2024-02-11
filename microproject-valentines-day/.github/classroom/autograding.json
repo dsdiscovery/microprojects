@@ -1,0 +1,36 @@
+{
+  "tests": [
+    {
+      "name": "Data Import",
+      "setup": "",
+      "run": "pytest test_microproject-valentines-day.py::test_Data_Import",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.1: Setting a custom index column",
+      "setup": "",
+      "run": "pytest test_microproject-valentines-day.py::test_Puzzle_1_1__Setting_a_custom_index_column",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1: Analyzing Spending Values",
+      "setup": "",
+      "run": "pytest test_microproject-valentines-day.py::test_Puzzle_1__Analyzing_Spending_Values",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Descriptive Statistics",
+      "setup": "",
+      "run": "pytest test_microproject-valentines-day.py::test_Part_2__Descriptive_Statistics_for_different_categories",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
