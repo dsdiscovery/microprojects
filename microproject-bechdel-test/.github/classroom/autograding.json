@@ -33,9 +33,9 @@
       "points": 1
     },
     {
-      "name": "Part 2.2: Finding the Percentage of Movies / Year with Each Rating",
+      "name": "Part 2.2: Finding the Percentage of Movies /Year with Each Rating",
       "setup": "",
-      "run": "pytest test_microproject-bechdel-test.py::test_Part_2_2__Finding_the_Percentage_of_Movies___Year_with_Each_Rating",
+      "run": "pytest test_microproject-bechdel-test.py::test_Part_2_2__Finding_the_Percentage_of_Movies__Year_with_Each_Rating",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
