@@ -1,0 +1,92 @@
+{
+  "tests": [
+    {
+      "name": "Puzzle 1.1: rollDie function",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_1_1__rollDie_function",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.2: Testing the die",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_1_2__Testing_the_die",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.3: visualizeDiceRolls Function",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_1_3__visualizeDiceRolls_Function",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.4: Rolling a d20",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_1_4__Rolling_a_d20",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.1: Advantage",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_2_1__Advantage",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.2: Disadvantage",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_2_2__Disadvantage",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.3: Triple Advantage",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_2_3__Triple_Advantage",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3.1: Normal Damage Roll",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_3_1__Normal_Damage_Roll",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3.3: Normal Damage Statistics",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_3_3__Normal_Damage_Statistics",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3.4: Divine Smite",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_3_4__Divine_Smite",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3.5: Critical Hit with Divine Smite",
+      "setup": "",
+      "run": "pytest test_microproject-dungeons-and-dragons.py::test_Puzzle_3_5__Critical_Hit_with_Divine_Smite_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
