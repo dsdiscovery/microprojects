@@ -1,0 +1,68 @@
+{
+  "tests": [
+    {
+      "name": "Part 0: Using the DISCOVERY Library",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_0__Using_the_DISCOVERY_Library",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Part 1: Finding the First 27 Rows",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_1__Finding_the_First_27_Rows",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 1: Label the Pixels with an Even b Value",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_1__Label_the_Pixels_with_an_Even_b_Value",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 1: Filter your DataFrame to contain ONLY even-valued blue pixels",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_1__Filter_your_DataFrame_to_contain_ONLY_even_valued_blue_pixels",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Creating a Character from a Number",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_2__Creating_a_Character_from_a_Number",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Applying the chr Function",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_2__Applying_the_chr_Function",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Concatenate the Entire String and Fix the Spaces",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_2__Concatenate_the_Entire_String_and_Fix_the_Spaces",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 3: Reuseable Function",
+      "setup": "",
+      "run": "pytest test_microproject-image-steganography.py::test_Part_3__Reuseable_Function",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}

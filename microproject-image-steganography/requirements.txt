@@ -1,0 +1,3 @@
+DISCOVERY==0.0.4
+jupyter2pytest
+pytest
