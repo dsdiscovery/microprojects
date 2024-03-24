@@ -1,3 +1,5 @@
-DISCOVERY==0.0.4
+pillow
+numpy
+pandas
 jupyter2pytest
 pytest
