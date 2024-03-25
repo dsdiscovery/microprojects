@@ -59,7 +59,7 @@
     {
       "name": "Part 3: Reuseable Function",
       "setup": "",
-      "run": "pytest test_microproject-image-steganography.py::test_Part_3__Reuseable_Function",
+      "run": "cp i.png taylor.png && pytest test_microproject-image-steganography.py::test_Part_3__Reuseable_Function",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
