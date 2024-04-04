@@ -1,3 +1,5 @@
-scipy==1.11.3
+matplotlib
+pandas==2.2.1
+scipy==1.13.0
 jupyter2pytest
 pytest
