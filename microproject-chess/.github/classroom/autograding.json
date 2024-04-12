@@ -1,0 +1,52 @@
+{
+  "tests": [
+    {
+      "name": "Puzzle 1: Conditional Probabilities",
+      "setup": "",
+      "run": "pytest test_microproject-chess.py::test_Puzzle_1__Conditional_Probabilities",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.1: Probability of Winning Formula",
+      "setup": "",
+      "run": "pytest test_microproject-chess.py::test_Puzzle_2_1__Probability_of_Winning_Formula",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.2: Probability of Win Formula",
+      "setup": "",
+      "run": "pytest test_microproject-chess.py::test_Puzzle_2_2__Probability_of_Win_Formula",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2.3: Plotting Your Winning Chances",
+      "setup": "",
+      "run": "pytest test_microproject-chess.py::test_Puzzle_2_3__Plotting_Your_Winning_Chances",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: df_decisive",
+      "setup": "",
+      "run": "pytest test_microproject-chess.py::test_Puzzle_3__df_decisive",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3: Probability vs. Reality",
+      "setup": "",
+      "run": "pytest test_microproject-chess.py::test_Puzzle_3__Probability_vs__Reality",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
