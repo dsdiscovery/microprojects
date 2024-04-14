@@ -3,4 +3,3 @@ pandas==2.0.3
 scikit-image
 jupyter2pytest
 pytest
-scikit-learn
