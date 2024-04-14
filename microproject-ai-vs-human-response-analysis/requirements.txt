@@ -1,6 +1,6 @@
 matplotlib
 pandas==2.0.3
-scipy==1.11.4
+scipy==1.13.0
 textblob==0.17.1
 jupyter2pytest
 pytest
