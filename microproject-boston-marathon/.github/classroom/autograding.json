@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Data Import",
+      "setup": "",
+      "run": "pytest test_microproject-boston-marathon.py::test_Data_Import",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.1",
+      "setup": "",
+      "run": "pytest test_microproject-boston-marathon.py::test_Puzzle_1_1",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.2: Creating a Pivot Table: Preparing the Data",
+      "setup": "",
+      "run": "pytest test_microproject-boston-marathon.py::test_Puzzle_1_2__Creating_a_Pivot_Table__Preparing_the_Data",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 1.2: Creating a Pivot Table: Create the Pivot Table",
+      "setup": "",
+      "run": "pytest test_microproject-boston-marathon.py::test_Puzzle_1_2__Creating_a_Pivot_Table__Create_the_Pivot_Table",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 2: Fastest Time",
+      "setup": "",
+      "run": "pytest test_microproject-boston-marathon.py::test_Puzzle_2__Fastest_Time",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
