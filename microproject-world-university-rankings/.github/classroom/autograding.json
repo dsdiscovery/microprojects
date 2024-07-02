@@ -1,4 +1,5 @@
 {
+  "allOrNothing": true,
   "tests": [
     {
       "name": "Importing the World University Rank Dataset",
