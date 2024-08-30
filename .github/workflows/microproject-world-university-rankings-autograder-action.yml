@@ -54,3 +54,13 @@ jobs:
         path: microproject-world-university-rankings/
         test_suite: autograding
         step_summary: true
+    - name: Log telemetry data
+      if: ${{ always() }}
+      uses: illinois/telemetry@dev_zojize
+      with:
+        endpoint: http://141.142.220.106:10710/telemetry
+        log_date: true
+        assignment: microproject-world-university-rankings
+        upstream_repo: dsdiscovery/microprojects
+        autograding_status: ${{ steps.autograding.outcome }}
+        points: ${{ steps.autograding.outputs.Points }}
