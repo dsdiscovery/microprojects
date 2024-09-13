@@ -1,4 +1,5 @@
 {
+  "allOrNothing": true,
   "tests": [
     {
       "name": "Puzzle 1: Splitting The House of Representatives and The Senate",
