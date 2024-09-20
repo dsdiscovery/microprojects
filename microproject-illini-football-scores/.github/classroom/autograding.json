@@ -1,4 +1,5 @@
 {
+  "allOrNothing": true,
   "tests": [
     {
       "name": "Puzzle 1: The Best and Worst Games in History",
