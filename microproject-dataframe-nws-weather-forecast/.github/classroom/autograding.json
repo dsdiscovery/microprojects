@@ -1,4 +1,5 @@
 {
+  "allOrNothing": true,
   "tests": [
     {
       "name": "Data API",
