@@ -1,6 +1,10 @@
 name: microproject-bechdel-test Grading
 'on':
   workflow_dispatch: {}
+permissions:
+  actions: write
+  contents: read
+  checks: read
 jobs:
   autograding:
     name: autograding
@@ -13,7 +17,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.12'
         cache: pip
         cache-dependency-path: microproject-bechdel-test/requirements.txt
     - name: Checkout release repository
@@ -45,9 +49,8 @@ jobs:
       run: cd microproject-bechdel-test && python3 test_microproject-bechdel-test.py && cd ..
     - name: Autograding
       id: autograding
-      uses: illinois/autograding@v5
+      uses: illinois/autograding@v6
       with:
         path: microproject-bechdel-test/
         test_suite: autograding
         step_summary: true
-        all_or_nothing: true
