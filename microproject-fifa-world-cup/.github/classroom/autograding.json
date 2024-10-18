@@ -4,7 +4,7 @@
     {
       "name": "Data Import",
       "setup": "",
-      "run": "pytest test_microproject-fifa-world-cup.py::test_Data_Import",
+      "run": "pytest test_microproject-FIFA-world-cup.py::test_Data_Import",
       "comparison": "included",
       "timeout": 0.5,
       "points": 1
@@ -12,7 +12,7 @@
     {
       "name": "Part 1: EDA",
       "setup": "",
-      "run": "pytest test_microproject-fifa-world-cup.py::test_Part_1__EDA",
+      "run": "pytest test_microproject-FIFA-world-cup.py::test_Part_1__EDA",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
@@ -20,7 +20,7 @@
     {
       "name": "Part 2.1: World Cup Games",
       "setup": "",
-      "run": "pytest test_microproject-fifa-world-cup.py::test_Part_2_1__World_Cup_Games",
+      "run": "pytest test_microproject-FIFA-world-cup.py::test_Part_2_1__World_Cup_Games",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
@@ -28,7 +28,7 @@
     {
       "name": "Part 2.2: Total Points Scored at The World Cup",
       "setup": "",
-      "run": "pytest test_microproject-fifa-world-cup.py::test_Part_2_2__Total_Points_Scored_at_The_World_Cup",
+      "run": "pytest test_microproject-FIFA-world-cup.py::test_Part_2_2__Total_Points_Scored_at_The_World_Cup",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
@@ -36,7 +36,7 @@
     {
       "name": "Part 3: United States Win Percentage",
       "setup": "",
-      "run": "pytest test_microproject-fifa-world-cup.py::test_Part_3__United_States_Win_Percentage",
+      "run": "pytest test_microproject-FIFA-world-cup.py::test_Part_3__United_States_Win_Percentage",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1

@@ -1,4 +1,4 @@
-name: microproject-fifa-world-cup Grading
+name: microproject-FIFA-world-cup Grading
 'on':
   workflow_dispatch: {}
 permissions:
@@ -19,13 +19,13 @@ jobs:
       with:
         python-version: '3.12'
         cache: pip
-        cache-dependency-path: microproject-fifa-world-cup/requirements.txt
+        cache-dependency-path: microproject-FIFA-world-cup/requirements.txt
     - name: Checkout release repository
       id: release-checkout
       uses: actions/checkout@v4
       with:
         repository: dsdiscovery/microprojects
-        ref: microproject-fifa-world-cup
+        ref: microproject-FIFA-world-cup
         path: release
     - name: Checkout cell replacer
       id: cell-replace-checkout
@@ -37,20 +37,20 @@ jobs:
       id: local-copy
       uses: illinois/local-copy@v2
       with:
-        src_path: release/microproject-fifa-world-cup
-        dst_path: microproject-fifa-world-cup
+        src_path: release/microproject-FIFA-world-cup
+        dst_path: microproject-FIFA-world-cup
         copy: '.github/classroom : .github/classroom, requirements.txt : requirements.txt'
-    - run: pip install -r microproject-fifa-world-cup/requirements.txt
+    - run: pip install -r microproject-FIFA-world-cup/requirements.txt
     - name: Run cell-replace
-      run: python cell-replace/cell-replace.py microproject-fifa-world-cup/microproject-fifa-world-cup.ipynb release/microproject-fifa-world-cup/microproject-fifa-world-cup.ipynb
+      run: python cell-replace/cell-replace.py microproject-FIFA-world-cup/microproject-FIFA-world-cup.ipynb release/microproject-FIFA-world-cup/microproject-FIFA-world-cup.ipynb
     - name: Generate Test Script
-      run: 'python3 -m jupyter2pytest microproject-fifa-world-cup/microproject-fifa-world-cup.ipynb "### TEST CASE for (.*)" microproject-fifa-world-cup/test_microproject-fifa-world-cup.py '
+      run: 'python3 -m jupyter2pytest microproject-FIFA-world-cup/microproject-FIFA-world-cup.ipynb "### TEST CASE for (.*)" microproject-FIFA-world-cup/test_microproject-FIFA-world-cup.py '
     - name: Generate Grading Artifacts
-      run: cd microproject-fifa-world-cup && python3 test_microproject-fifa-world-cup.py && cd ..
+      run: cd microproject-FIFA-world-cup && python3 test_microproject-FIFA-world-cup.py && cd ..
     - name: Autograding
       id: autograding
       uses: illinois/autograding@v6
       with:
-        path: microproject-fifa-world-cup/
+        path: microproject-FIFA-world-cup/
         test_suite: autograding
         step_summary: true
