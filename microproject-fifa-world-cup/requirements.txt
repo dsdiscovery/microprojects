@@ -1,4 +1,0 @@
-pandas==2.2.3
-matplotlib
-jupyter2pytest
-pytest
