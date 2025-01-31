@@ -1,0 +1,45 @@
+{
+  "allOrNothing": true,
+  "tests": [
+    {
+      "name": "Part 1: Retrieving Your Forecast",
+      "setup": "",
+      "run": "pytest test_microproject-02-dataframe-nws-weather-forecast.py::test_Part_1__Retrieving_Your_Forecast",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Loading Your Weather Forecast as a DataFrame",
+      "setup": "",
+      "run": "pytest test_microproject-02-dataframe-nws-weather-forecast.py::test_Part_2__Loading_Your_Weather_Forecast_as_a_DataFrame",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzles 3.1 and 3.2: Warmest and Coldest Temperatures",
+      "setup": "",
+      "run": "pytest test_microproject-02-dataframe-nws-weather-forecast.py::test_Puzzles_3_1_and_3_2__Warmest_and_Coldest_Temperatures",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Puzzle 3.3: Forecast Summary",
+      "setup": "",
+      "run": "pytest test_microproject-02-dataframe-nws-weather-forecast.py::test_Puzzle_3_3__Forecast_Summary",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 4: Create a Scatter Plot",
+      "setup": "",
+      "run": "pytest test_microproject-02-dataframe-nws-weather-forecast.py::test_Part_4__Create_a_Scatter_Plot",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
