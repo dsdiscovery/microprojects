@@ -52,7 +52,7 @@ jobs:
         test_suite: autograding
         step_summary: true
     - name: Record a Successful MicroProject (telemetry)
-      uses: illinois/autograder-telemetry@v2
+      uses: illinois/autograding-telemetry@v2
       continue-on-error: true
       with:
         endpoint: https://waf-server-01.cs.illinois.edu/autograder-telemetry/
