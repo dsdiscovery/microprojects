@@ -1,0 +1,21 @@
+{
+  "allOrNothing": true,
+  "tests": [
+    {
+      "name": "Testing: Part 1",
+      "setup": "",
+      "run": "pytest test_microproject-99-test.py::test_Testing__Part_1",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Testing: Part 2",
+      "setup": "",
+      "run": "pytest test_microproject-99-test.py::test_Testing__Part_2",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
