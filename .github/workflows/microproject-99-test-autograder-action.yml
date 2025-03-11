@@ -46,7 +46,7 @@ jobs:
       run: cd microproject-99-test && python3 test_microproject-99-test.py && cd ..
     - name: Autograding
       id: autograding
-      uses: illinois/autograding@v6
+      uses: illinois/autograding@v7
       with:
         path: microproject-99-test/
         test_suite: autograding

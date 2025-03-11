@@ -1,5 +1,10 @@
 {
   "allOrNothing": true,
+  "microProject": {
+    "title": "MicroProject #99: Test",
+    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/01/regular.svg",
+    "link": "https://waf.cs.illinois.edu/"
+  },
   "tests": [
     {
       "name": "Testing: Part 1",
