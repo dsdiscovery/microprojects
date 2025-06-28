@@ -1,0 +1,34 @@
+{
+  "allOrNothing": true,
+  "microProject": {
+    "title": "MicroProject: Illini Football Since 1982",
+    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/vault-02/regular.svg",
+    "link": "https://mastery.cs.illinois.edu/platform/cards/"
+  },
+  "tests": [
+    {
+      "name": "Part 1: The Best and Worst Games in History",
+      "setup": "",
+      "run": "pytest test_microproject-vault-02-illini-football-since-1892.py::test_Part_1__The_Best_and_Worst_Games_in_History",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Are Football Scores Higher in Recent Years?",
+      "setup": "",
+      "run": "pytest test_microproject-vault-02-illini-football-since-1892.py::test_Part_2__Are_Football_Scores_Higher_in_Recent_Years_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 3: Create a Bar Chart",
+      "setup": "",
+      "run": "pytest test_microproject-vault-02-illini-football-since-1892.py::test_Part_3__Create_a_Bar_Chart",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
