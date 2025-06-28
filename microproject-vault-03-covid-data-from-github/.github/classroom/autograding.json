@@ -15,17 +15,17 @@
       "points": 1
     },
     {
-      "name": "Data Analysis",
+      "name": "Part 1: Data Analysis",
       "setup": "",
-      "run": "pytest test_microproject-vault-03-covid-data-from-github.py::test_Data_Analysis",
+      "run": "pytest test_microproject-vault-03-covid-data-from-github.py::test_Part_1__Data_Analysis",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
     },
     {
-      "name": "Pareto Principle",
+      "name": "Part 2: Pareto Principle",
       "setup": "",
-      "run": "pytest test_microproject-vault-03-covid-data-from-github.py::test_Pareto_Principle",
+      "run": "pytest test_microproject-vault-03-covid-data-from-github.py::test_Part_2__Pareto_Principle",
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
