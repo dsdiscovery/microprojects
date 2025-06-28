@@ -1,0 +1,34 @@
+{
+  "allOrNothing": true,
+  "microProject": {
+    "title": "MicroProject: Simulation for Ten Heads in a Row",
+    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/vault-04/regular.svg",
+    "link": "https://mastery.cs.illinois.edu/platform/cards/"
+  },
+  "tests": [
+    {
+      "name": "Part 1: Initial Simulation",
+      "setup": "",
+      "run": "pytest test_microproject-vault-04-ten-heads-in-a-row.py::test_Part_1__Initial_Simulation",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Part 2: Finding the Two-Coin Sequence",
+      "setup": "",
+      "run": "pytest test_microproject-vault-04-ten-heads-in-a-row.py::test_Part_2__Finding_the_Two_Coin_Sequence",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 3: Flipping Ten Heads in a Row",
+      "setup": "",
+      "run": "pytest test_microproject-vault-04-ten-heads-in-a-row.py::test_Part_3__Flipping_Ten_Heads_in_a_Row",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}
