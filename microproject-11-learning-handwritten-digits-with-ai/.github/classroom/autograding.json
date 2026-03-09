@@ -2,7 +2,7 @@
   "allOrNothing": true,
   "microProject": {
     "title": "MicroProject #11: Learning Handwritten Digits with AI",
-    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/14/regular.svg",
+    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/up-mnist-digits/regular.svg",
     "link": "https://mastery.cs.illinois.edu/platform/cards/"
   },
   "tests": [

@@ -1,6 +1,6 @@
-matplotlib==3.10.7
-pandas==2.3.3
+matplotlib==3.10.8
+pandas==3.0.1
 matplotlib
-scikit_learn==1.7.2
+scikit_learn==1.8.0
 jupyter2pytest
 pytest
