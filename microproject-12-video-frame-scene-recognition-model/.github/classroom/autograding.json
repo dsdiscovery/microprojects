@@ -2,7 +2,7 @@
   "allOrNothing": true,
   "microProject": {
     "title": "MicroProject #13: Building a Scene Recognition Model form Video Frames",
-    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/13/regular.svg",
+    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/up-video-frames/regular.svg",
     "link": "https://mastery.cs.illinois.edu/platform/cards/"
   },
   "tests": [

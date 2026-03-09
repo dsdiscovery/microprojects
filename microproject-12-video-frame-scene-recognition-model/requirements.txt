@@ -1,6 +1,6 @@
-pandas==2.3.3
+pandas==3.0.1
 matplotlib
-scikit_learn==1.7.2
+scikit_learn==1.8.0
 scikit-image
 jupyter2pytest
 pytest
