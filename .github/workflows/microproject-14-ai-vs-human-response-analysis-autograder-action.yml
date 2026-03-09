@@ -56,7 +56,6 @@ jobs:
       continue-on-error: true
       with:
         endpoint: https://waf-server-01.cs.illinois.edu/autograder-telemetry/
-        log_date: true
         assignment: microproject-14-ai-vs-human-response-analysis
         upstream_repo: dsdiscovery/microprojects
         autograding_status: ${{ steps.autograding.outcome }}
