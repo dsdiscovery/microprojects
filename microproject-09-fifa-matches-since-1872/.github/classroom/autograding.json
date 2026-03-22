@@ -1,0 +1,58 @@
+{
+  "allOrNothing": true,
+  "microProject": {
+    "title": "MicroProject #8: FIFA Matches Since 1872",
+    "image": "https://waf-server-01.cs.illinois.edu/static/up-cards/up-fifa-matches/regular.svg",
+    "link": "https://mastery.cs.illinois.edu/platform/cards/"
+  },
+  "tests": [
+    {
+      "name": "Part 1: Importing the FIFA Matches from GitHub",
+      "setup": "",
+      "run": "pytest test_microproject-09-fifa-matches-since-1872.py::test_Part_1__Importing_the_FIFA_Matches_from_GitHub",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "Part 2.1: Finding the Goals Scored for each \"Home Team\"",
+      "setup": "",
+      "run": "pytest test_microproject-09-fifa-matches-since-1872.py::test_Part_2_1__Finding_the_Goals_Scored_for_each__Home_Team_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2.2: Finding the Goals Scored for each \"Away Team\"",
+      "setup": "",
+      "run": "pytest test_microproject-09-fifa-matches-since-1872.py::test_Part_2_2__Finding_the_Goals_Scored_for_each__Away_Team_",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2.4: Merge Two DataFrames Into One",
+      "setup": "",
+      "run": "pytest test_microproject-09-fifa-matches-since-1872.py::test_Part_2_4__Merge_Two_DataFrames_Into_One",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 2.5: Fixing Missing Data",
+      "setup": "",
+      "run": "pytest test_microproject-09-fifa-matches-since-1872.py::test_Part_2_5__Fixing_Missing_Data",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "Part 3.1: World Cup Games",
+      "setup": "",
+      "run": "pytest test_microproject-09-fifa-matches-since-1872.py::test_Part_3_1__World_Cup_Games",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}

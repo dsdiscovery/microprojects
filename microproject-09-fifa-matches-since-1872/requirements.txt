@@ -1,0 +1,4 @@
+pandas==3.0.1
+matplotlib
+jupyter2pytest
+pytest
