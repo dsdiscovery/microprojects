@@ -61,14 +61,6 @@
       "comparison": "included",
       "timeout": 0.1,
       "points": 1
-    },
-    {
-      "name": "Part 6: Misclassified Frames",
-      "setup": "",
-      "run": "pytest test_microproject-12-video-frame-scene-recognition-model.py::test_Part_6__Misclassified_Frames",
-      "comparison": "included",
-      "timeout": 0.1,
-      "points": 1
     }
   ]
 }

@@ -1,4 +1,4 @@
-pandas==3.0.1
+pandas==3.0.2
 matplotlib
 scikit_learn==1.8.0
 scikit-image
