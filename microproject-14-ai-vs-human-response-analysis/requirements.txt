@@ -1,6 +1,6 @@
-pandas==3.0.1
+pandas==3.0.2
 matplotlib
 scipy==1.17.1
-textblob==0.17.1
+textblob==0.20.0
 jupyter2pytest
 pytest
